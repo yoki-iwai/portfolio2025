@@ -1,0 +1,503 @@
+body {
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    background: linear-gradient(to right, #feb09b,#ecbce2);
+    
+
+* {
+    box-sizing: inherit;
+    
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* 共通CSS */
+
+img {
+    max-width: 100%;
+}
+.sec-title {
+    color: #fff;
+    text-align: center;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    filter: drop-shadow(1px 1px 10px #c0c0c0);
+
+}
+.wrapper {
+    max-width: 1000px;
+    padding: 90px 16px 150px 16px;
+    margin: 0 auto;
+    text-align: center;
+}
+.item-title {
+    font-size: 2.5rem;
+    display: inline-block;
+    border-bottom: solid 6px #e03131;
+    margin-bottom: 70px;
+}
+
+/* ヘッダー　*/
+#header {
+     /* memo*/
+    background-image: url(../img/mainvisual.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 20px 40px;
+    position: relativ;
+
+    nav {
+        
+        ul {
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                color: brown;
+                margin-left: 30px;
+
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    text-decoration: none;
+                    
+                }
+            }
+    
+        }
+    }
+
+    .site-title {
+        padding: 0 16px;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        right: 0;
+        filter: drop-shadow(1px 1px 10px #c0c0c0);
+   
+    }
+}
+.infomation {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 65%;
+    left: 0;
+
+    .pc {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 27%;
+        z-index: 1;
+
+    }
+    
+
+}
+#circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    background: rgb(255 126 126 / 26%);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+
+   
+
+}
+
+.feature {
+    position: absolute;
+    color: #fff;
+    display: flex;
+
+
+    div {
+        margin-left: 20px;
+
+    }
+    a {
+        margin-top: 8px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    img {
+        width: 70px;
+    }
+
+
+}
+
+.one {
+    top: 450px;
+    right: 70px;
+    
+}
+.tow {
+    top: 100px;
+    left: 340px;
+    transform: rotate(-90deg);
+
+
+}
+.three {
+    bottom: 450px;
+    left: 50px;
+     transform: rotate(-180deg);
+
+}
+.for {
+    bottom: 150px;
+    right: 370px;
+        transform: rotate(-270deg);
+
+
+}
+.control {
+    position: absolute;
+    top: 140%;
+    right: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+
+    img {
+        width: 15px;
+    }
+    h3 {
+        color: #fff;
+    }
+}
+#upBtn {
+    cursor: pointer;
+}
+#downBtn {
+    cursor: pointer;
+    transform:  rotate(-180deg);
+}
+
+#menu {
+
+    margin-top: 50vw;
+
+    .menu__img {
+        background-image: url(../img/menu.jpg);
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        
+        
+
+    }
+    
+    .menu-content {
+        display: flex;
+
+        .menu-item {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 45px;
+            
+
+            
+
+            dl {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            dt {
+                width: 85%;
+                text-align: left;
+                border-bottom: dotted 1px #000;
+                margin-bottom: 25px;
+            }
+            dd {
+                width: 15%;
+                text-align: right;
+
+            }
+
+            
+        }
+        .menu-item:first-child {
+
+            border-right: solid 1px #000;
+
+        }
+    }
+
+} 
+
+#about {
+
+    .about-img {
+        background-image: url(../img/about.jpg);
+        position: relative;
+        height: 300px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .about-content {
+
+        .about-item {
+            
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+
+                li {
+                    width: 45%;
+                    line-height: 2;
+                    text-align: left;
+                    padding: 2%;
+                }
+            }
+        }
+
+    }
+    .btn {
+        width: 160px;
+        height: 50px;
+        line-height: 3.5;
+        display: inline-block;
+        color: #000;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+
+        span {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            
+            
+        }
+        span::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e03131;
+            transition: all 0.3s ease;
+            width: 2px;
+            height: 50%;
+
+        }
+        span::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            background: #e03131;
+            transition: all 0.3s ease;
+            width: 20%;
+            height: 2px;
+        }
+    }
+    .btn::before {
+        width: 2px;
+        height: 50%;
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: #e03131;
+        transition: all 0.3s ease;
+        
+
+    }
+    .btn::after  {
+        position: absolute;
+        content: "";
+        right: 0;
+        bottom: 0;
+        background: #e03131;
+        transition: all 0.3s ease;
+        width: 20%;
+        height: 2px;
+    }
+    
+}
+#location {
+    .location-img {
+        background-image: url(../img/location.jpg);
+        position: relative;
+        height: 300px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .location-content {
+
+        .location-item {
+            .item-map {
+                filter: grayscale(1);
+                margin-bottom: 20px;
+    
+                iframe {
+                    width: 100%;
+                    height: 400px;
+                    border: 0;
+                }
+    
+            }
+            .item-info {
+                text-align: left;
+            }
+        }
+
+    }
+    
+}
+
+#footer {
+
+    font-size: 0.5rem;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 767px)  {
+
+    /* 共通 */
+
+.body {
+    .main {
+        width: 100%;
+    }
+
+}
+.wrapper {
+    padding: 30px 16px 60px 16px;
+}
+.item-title {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+
+.sec-title {
+    font-size: 2rem;
+    top: 26%;
+}
+
+
+#header {
+
+    .site-title {
+        top: 42%;
+    }
+    
+
+}
+.infomation {
+    display: none;
+  }
+
+.control {
+    display: none;
+
+}
+
+#menu {
+    margin-top: 7vw;
+
+    .fixed-bg {
+        height: 94px;
+        background-attachment: scroll; 
+    }
+
+    .sec-title {
+        font-size: 2rem;
+        top: 26%;
+    }
+    .wrapper {
+        padding: 30px 16px 60px 16px;
+    }
+    .menu-content {
+        flex-direction: column;
+
+        .menu-item:first-child {
+
+            border-right: none;
+            
+        }
+        .menu-item {
+            width: 100%;
+            padding: 0;
+            
+        }
+             
+    }
+                       
+
+       
+}
+
+#about {
+    .about-img {
+        height: 94px;
+        background-attachment: scroll;
+    }
+
+    .about-content {
+
+        .about-item {
+
+        
+            ul {
+                flex-direction: column;
+        
+                li {
+                    width: 100%;
+                }
+            }
+        
+            }
+
+    }
+
+    
+
+    
+}
+#location {
+    .location-img {
+        height: 94px;
+        background-attachment: scroll;
+        
+    }
+}
+
+
+
+}
+}
+
+
